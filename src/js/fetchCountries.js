@@ -6,9 +6,5 @@ export function fetchCountries(name) {
     return fetch(`${BASE_URL}${name}?${searchParams}`)
     .then((response) => {
         return response.json();
-    })
-    .then((country) => {
-        console.log(country);
-    })
-    .catch(error => console.log(error));
+    });
 }
